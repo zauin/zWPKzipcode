@@ -9,6 +9,7 @@
 */ 
 
 add_filter( 'wpmem_register_form', 'my_register_form_filter', 2);
+
 function my_register_form_filter( $string ) {
 	$org_str = '우편번호';
 	$rep_str = '우편번호 <input type=button id=zipcode_search value=찾기 class=zip_btn onclick=openDaumPostcode();>';
@@ -17,16 +18,12 @@ function my_register_form_filter( $string ) {
 
 }  
 
- add_action('init','zauin_address_start');  
+add_action('init','zauin_address_start');  
 
- function zauin_address_start(){  
+function zauin_address_start(){  
 	wp_enqueue_script( 'postcode', 'http://dmaps.daum.net/map_js_init/postcode.v2.js', array(), null, true ); 
 	add_action('wp_enqueue_scripts', 'zauin_wp_enqueue_scripts'); 
-	function zauin_wp_enqueue_scripts() {
-	?>
-<!-- 
-		<link rel='stylesheet' id='dillypress-agent-css'  href='wp-content/plugins/zauin-korea-zipcode/zauin_ui.css' type='text/css' />
- -->
+	function zauin_wp_enqueue_scripts() { ?>
 		<script type="text/javascript">
 			function openDaumPostcode() {
 				new daum.Postcode({
@@ -38,6 +35,6 @@ function my_register_form_filter( $string ) {
 				}).open();
 			}
 		</script>
-	 <?php
+ 	<?php
 	}
- } 
+} 
