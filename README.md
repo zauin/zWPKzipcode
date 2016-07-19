@@ -1,10 +1,10 @@
 # zWPKZipcode
 
 * Plugin Name: Zauin Korean Zipcode  
-* Plugin URI: Http://tera.co.kr
+* Plugin URI: http://tera.co.kr/main/?p=216
 * Description: WP-Members 플러그인에 우편번호 필드 옆에 "찾기"버튼을 생성합니다.
 * Author: zauin (zauin@tera.co.kr)
-* Author URI: Http://tera.co.kr/main
+* Author URI: Http://tera.co.kr
 * Version:0.1
 * Date Created : 2016/01/25
 
