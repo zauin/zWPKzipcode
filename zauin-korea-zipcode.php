@@ -1,10 +1,10 @@
 <?php
 /*
 * Plugin Name: Korean ZipCode with WP-Members
-* Plugin URI: Http://tera.co.kr/main
+* Plugin URI: http://tera.co.kr/main/?p=216
 * Description: WP-Members 플러그인과 함께 작동하며 Daum 우편번호 검색 API를 이용하여 우편번호를 검색할 수 있습니다.
 * Author: zauin
-* Author URI: Http://tera.co.kr/main
+* Author URI: Http://tera.co.kr
 * Version:0.5
 */ 
 
