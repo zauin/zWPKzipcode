@@ -1,11 +1,11 @@
 <?php
 /*
-* Plugin Name: Zauin Korea Zipcode  
+* Plugin Name: Korean ZipCode with WP-Members
 * Plugin URI: Http://tera.co.kr/main
-* Description: WP-Members 플러그인에 우편번호 필드 옆에 "찾기"버튼을 생성합니다.
+* Description: WP-Members 플러그인과 함께 작동하며 Daum 우편번호 검색 API를 이용하여 우편번호를 검색할 수 있습니다.
 * Author: zauin
 * Author URI: Http://tera.co.kr/main
-* Version:0.1
+* Version:0.5
 */ 
 
 add_filter( 'wpmem_register_form', 'my_register_form_filter', 2);
