@@ -14,7 +14,7 @@ add_filter( 'wpmem_register_form', 'my_register_form_filter', 2);
 
 function my_register_form_filter( $string ) {
 	$org_str = '우편번호';
-	$rep_str = '우편번호 <input type="button" id="zipcode_search" value="찾기" class="zip_btn" onclick="openDaumPostcode();">';
+	$rep_str = '우편번호 <input type="button" id="zipcode_search" value="찾기" class="zip_btn" onclick="openDaumPostcode();" style="border: 1px solid #cccccc; padding: 0 20px 0 20px">';
 	$string = str_replace( $org_str, $rep_str, $string );
 	return $string;
 
